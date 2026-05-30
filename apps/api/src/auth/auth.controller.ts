@@ -9,7 +9,7 @@ export class AuthController {
 
   @Post('register')
   @ApiOperation({ summary: 'Register a new user' })
-  register(@Body() body: { phone: string; password: string; role?: number }) {
+  register(@Body() body: { phone: string; password: string }) {
     return this.authService.register(body);
   }
 

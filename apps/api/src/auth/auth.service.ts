@@ -1,6 +1,7 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcrypt';
+import { UserTier } from '@sec-ops/shared';
 import { UsersService } from '../users/users.service';
 
 @Injectable()
@@ -12,7 +13,7 @@ export class AuthService {
 
   async register(dto: { phone: string; password: string; role?: number }) {
     const hash = await bcrypt.hash(dto.password, 10);
-    const user = await this.usersService.create({ ...dto, password: hash });
+    const user = await this.usersService.create({ phone: dto.phone, password: hash, role: UserTier.PUBLIC });
     return this.signToken(user);
   }
 
