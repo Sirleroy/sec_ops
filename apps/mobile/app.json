@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "SecOps",
+    "slug": "sec-ops",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "secops",
+    "platforms": ["android", "ios"],
+    "android": {
+      "package": "com.secops.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#1a1a2e"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.secops.app"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-camera"
+    ]
+  }
+}

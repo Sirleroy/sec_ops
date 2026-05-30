@@ -1,0 +1,9 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": false,
+    "paths": {
+      "@sec-ops/shared": ["../../packages/shared/src"]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@sec-ops/mobile",
+  "version": "0.0.1",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "dev": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "build": "expo export",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "expo": "~52.0.0",
+    "expo-router": "~4.0.0",
+    "expo-location": "~18.0.0",
+    "expo-camera": "~16.0.0",
+    "react": "18.3.1",
+    "react-native": "0.76.0",
+    "react-native-maps": "^1.18.0",
+    "@react-navigation/native": "^6.1.18",
+    "@react-navigation/stack": "^6.4.1",
+    "socket.io-client": "^4.7.0",
+    "@sec-ops/shared": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@types/react": "~18.3.0",
+    "typescript": "^5.4.0"
+  }
+}
